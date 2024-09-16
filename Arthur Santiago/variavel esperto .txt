@@ -1,0 +1,92 @@
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógica de programação
+// Professor   : Larissa Ribeiro
+// Descrição   : Calcular a soma dos números de 1 à 20 utilizando o comando enquanto
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 12/09/2024
+Var
+   con, som : inteiro
+
+Inicio
+
+      enquanto con <= 20 faca
+               som <- som + con
+               con <- con + 1
+      fimenquanto
+      escreval("A soma é", som)
+
+Fimalgoritmo
+
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógica de programação
+// Professor   : Larissa Ribeiro
+// Descrição   : Verifica se números de 1 à 20 são pares
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis 
+    par, contador: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+    contador <- 1
+    
+enquanto contador <= 20 faca
+         par <- contador % 2
+         se par = 0 entao
+            escreval(contador, " é par")
+         fimse
+         contador <- contador + 1
+fimenquanto
+
+Fimalgoritmo
+
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Calcula Fatorial
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 12/09/2024
+Var
+   num, res : inteiro
+
+Inicio
+      escreval("digite um número para descobrir seu fatorial")
+      leia(num)
+      res <- num
+      enquanto num >= 1 faca
+               res <- res * num
+               num <- num - 1
+      fimenquanto
+      escreval("O fatorial é", res)
+
+      
+
+Fimalgoritmo
+
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógica de programação
+// Professor   : Larissa Ribeiro
+// Descrição   : Ler e fazer a média de 10 números
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis 
+     soma,nota, media: real
+     contador: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+     contador<-1
+     
+     enquanto contador<=10 faca
+     
+              escreval("insira a nota")
+              leia(nota)
+              soma<- soma + nota
+              
+              contador<-contador+1
+fimenquanto
+
+media<-soma/10
+escreval("a media dos valores inseridos é:", media)
+Fimalgoritmo

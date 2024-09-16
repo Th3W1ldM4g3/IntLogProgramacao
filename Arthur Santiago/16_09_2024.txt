@@ -1,0 +1,109 @@
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógaica de programção
+// Professor   : Larissa Ribeiro
+// Descrição   : Ler a média das idades e parar quando um valor negativo for inserido
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis 
+  idade: inteiro
+  media: real
+  contador: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+   escreval ("insira idade:")
+   leia(idade)
+   enquanto idade>=0 faca
+            media<-media+idade
+             escreval ("insira idade:")
+             leia(idade)
+             contador<- contador+1
+   fimenquanto
+
+   escreval("foram lidas", contador, " idades")
+   
+   media<-media/contador
+   escreval("a media da idade digitadas é:", media)
+   
+
+Fimalgoritmo
+
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógaica de programção
+// Professor   : Larissa Ribeiro
+// Descrição   : Ler a média das idades e parar quando um valor negativo for inserido
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis 
+  num: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+   escreval ("insira um número:")
+   leia(num)
+   enquanto num >= 0 faca
+            num <- num * 2
+            escreval(num)
+            escreval("insira um número:")
+            leia(num)
+   fimenquanto
+   
+Fimalgoritmo
+
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógaica de programção
+// Professor   : Larissa Ribeiro
+// Descrição   : Ler a média das idades e parar quando um valor negativo for inserido
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis 
+ login: caractere
+ senha: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+    escreval("digite o login")
+   leia(login)
+   enquanto login<>"admin" faca
+            escreval("login incorreto")
+            leia(login)
+   fimenquanto
+
+   escreval("digite a senha")
+   leia(senha)
+   enquanto senha<>"admin123" faca
+            escreval("senha incorreta")
+            leia(senha)
+   fimenquanto
+   
+   escreval("Bem vindo ao sistema")
+
+Fimalgoritmo
+
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógaica de programção
+// Professor   : Larissa Ribeiro
+// Descrição   : Ler a média das idades e parar quando um valor negativo for inserido
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis num, par, res inteiro
+   res, num, par: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   enquanto res < 100 faca
+            escreval("insira um número")
+            leia (num)
+            par <- num % 2
+            se (par = 0) entao
+               res <- res + num
+            fimse
+   fimenquanto
+   escreval("A soma é", res)
+Fimalgoritmo
+

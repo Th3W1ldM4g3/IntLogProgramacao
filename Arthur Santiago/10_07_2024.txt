@@ -1,0 +1,99 @@
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógica de programação
+// Professor   : Larissa Ribeiro
+// Descrição   : Soma 2 números e para se o usuário responder não
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 07/10/2024
+Var
+// Seção de Declarações das variáveis 
+num, res: real
+resposta: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   repita
+         escreval("insira dois valores")
+         leia(num)
+         res<-num
+         leia(num)
+         res<-res+num
+         escreval("O resultado é",res,", deseja somar outros valores?")
+         leia(resposta)
+   ate resposta="não"
+         
+
+Fimalgoritmo
+
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógica de programação
+// Professor   : Larissa Ribeiro
+// Descrição   : Escreve os números ímpares de 1 à 20
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 07/10/2024
+Var
+// Seção de Declarações das variáveis 
+num: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   repita
+         num <- num + 1
+         se num % 2 <> 0 entao
+            escreval(num)
+         fimse
+   ate num = 20
+
+Fimalgoritmo
+
+
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógica de programação
+// Professor   : Larissa Ribeiro
+// Descrição   : Soma o valor de 20 itens e mostra o total
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 07/10/2024
+Var
+// Seção de Declarações das variáveis 
+   value, result : real
+   counter : inteiro
+   
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   repita
+         escreval("insira o valor do produto")
+         leia(value)
+         result <- result + value
+         counter <- counter + 1
+   ate counter = 20
+   escreval ("O total é ", result)
+
+Fimalgoritmo
+
+
+Algoritmo "semnome"
+// Disciplina   : Introdução a lógica de programação
+// Professor   : Larissa Ribeiro
+// Descrição   : Encontra o menor número entre 10 inseridos
+// Autor(a)    : Arthur Santiago Mayolino e Eduardo Sberse
+// Data atual  : 07/10/2024
+Var
+// Seção de Declarações das variáveis 
+   number, smallest: real
+   counter: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   escreval("Insira um número")
+   leia(smallest)
+   counter <- 1
+   repita
+         escreval("Insira outro número")
+         leia(number)
+         se number < smallest entao
+            smallest <- number
+         fimse
+         counter <- counter + 1
+   ate counter = 10
+   escreval("O menor é ", smallest)
+   
+Fimalgoritmo
+
